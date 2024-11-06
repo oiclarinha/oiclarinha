@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experimento Social - IA e Privacidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Experimento Social</h1>
+        <p id="intro">Responda às perguntas abaixo para descobrir seu perfil.</p>
+
+        <!-- Perguntas -->
+        <div class="question" id="question1">
+            <p>Qual é o seu filme favorito?</p>
+            <input type="text" id="answer1">
+            <button onclick="nextQuestion(1)">Próxima</button>
+        </div>
+
+        <div class="question" id="question2" style="display: none;">
+            <p>Você prefere lugares tranquilos ou agitados?</p>
+            <input type="text" id="answer2">
+            <button onclick="nextQuestion(2)">Próxima</button>
+        </div>
+
+        <!-- Botão para ver o perfil -->
+        <button id="showProfileBtn" onclick="showProfile()" style="display: none;">Ver Perfil</button>
+
+        <!-- Exibição do perfil -->
+        <div id="profile" class="profile" style="display: none;"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!---
+oiclarinha/oiclarinha is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
